@@ -20,7 +20,7 @@ class MyClass implements GroovyInterceptable {
 }
 
 println new MyClass().greet("dyang")
-<pre><code>
+</pre></code>
 运行该脚本，Groovy会打印出以下输出:
 
 <pre class="terminal">
