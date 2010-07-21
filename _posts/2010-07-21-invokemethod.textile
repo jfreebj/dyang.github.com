@@ -6,10 +6,12 @@ categories: groovy code
 最近一段时间在摆弄Groovy。
 Groovy提供了多种用于实现AOP的方法，其中之一是让对象实现GroovyInterceptable接口，然后通过实现InvokeMethod方法来对方法调用进行拦截处理。举例如下：
 
-<pre><code>class MyClass implements GroovyInterceptable{    def invokeMethod(String name, args)    {        System.out.println("Intercepted ${name}")        def methodToCall = MyClass.metaClass.getMetaMethod(name, args)        methodToCall?.invoke(this, args)    }    String greet(String name)    {        "Hello ${name}"    }}println new MyClass().greet("dyang")</code></pre>
+<pre><code>
+class MyClass implements GroovyInterceptable {    def invokeMethod(String name, args) {        System.out.println("Intercepted ${name}")        def methodToCall = MyClass.metaClass.getMetaMethod(name, args)        methodToCall?.invoke(this, args)    }    String greet(String name) {        "Hello ${name}"    }}println new MyClass().greet("dyang")
+</code></pre>
 运行该脚本，Groovy会打印出以下输出：
 <pre class="terminal">
-Intercepted greetHello dyang 
+Intercepted greetHello dyang
 </pre>
 这是对的。不过如果你把InvokeMethod中的System.out.println改成println并再次运行该脚本，那么有趣的事就发生了——Groovy会提示出错StackOverflowError。这是为什么呢？
 
