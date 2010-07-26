@@ -1,0 +1,35 @@
+---
+layout: post
+title: Groovy中基于正则表达式的模式匹配
+categories: groovy code
+---
+
+在写 "OCUnitReportConverter":http://github.com/dyang/OCUnitReportConverter 的时候，我发现Groovy对用正则表达式进行模式匹配支持得非常棒。比如说下面这段代码，遍历 "OCUnit":http://www.sente.ch/software/ocunit/ 输出的每一行文本，提取其中的信息：
+
+<pre><code>
+def parse(String ocunitOutput) {
+	def expSuite = /^Test Suite '([^']+)' started at (.*)/
+	def expTestCount = /^Executed ([\d]+) tests, with ([\d]+) failure[s]? \([\d]+ unexpected\) in [\S]+ \(([^\)]+)\).*/
+	def expTestCase = /^Test Case '-[\S]+ ([^\]]+)\]' (passed|failed) \(([\S]*) seconds\).*/
+	def expTestFailure = /(.+): error: -\[[^]]+\] : (.*)/
+
+    ocunitOutput.split(LINE_BREAK).each {
+		switch (it) {
+			case ~expSuite:
+				def matcher = Matcher.getLastMatcher()
+				testSuites << new TestSuite(name: matcher[0][1], timestamp: matcher[0][2])
+				break
+	    	case ~expTestCount:
+				// capture test count data...
+			case ~expTestFailure:
+				// capture test failure data...
+			case ~expTestCase:
+				// capture test case data...
+		}
+	// ...
+}
+</pre></code> 
+
+同样的逻辑如果在Java里处理就比较麻烦了。由于Java中switch只支持byte、short、char、int(以及它们的包装类）和枚举类型，因此要么写一堆if-else，要么就得动用strategy等面向对象手段来掩盖语言层面的不足了，写起来总感觉不如Groovy那样顺畅自然。
+
+值得一提的是，上面代码中的Matcher.getLastMatcher方法来自GDK的扩展，用来提供上一次正则表达式匹配的结果（比如获取其中的组信息），这个方法格外适用于switch-case这种无法直接获取正则匹配结果的场景。
