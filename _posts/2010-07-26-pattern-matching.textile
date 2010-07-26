@@ -19,7 +19,7 @@ def parse(String ocunitOutput) {
 				def matcher = Matcher.getLastMatcher()
 				testSuites << new TestSuite(name: matcher[0][1], timestamp: matcher[0][2])
 				break
-	    	case ~expTestCount:
+			case ~expTestCount:
 				// capture test count data...
 			case ~expTestFailure:
 				// capture test failure data...
