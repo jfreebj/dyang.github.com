@@ -1,0 +1,37 @@
+---
+layout: post
+title: Bisect Max Steps Counter
+categories: groovy code
+---
+
+星期五下午，我需要通过bisect的方法来定位系统中的一个bug。一次次地更新、编译和测试很无聊，所以我决定用新学的Groovy计算bisect所需的最大次数来打发时间。
+
+以下是测试：
+<pre><code>
+class BisectTest extends GroovyTestCase {
+	void testMaxSteps() {
+		def bisect = new bisectStepsCounter()
+		assertEquals 0, bisect.maxSteps(1, 2)
+		assertEquals 1, bisect.maxSteps(1, 3)
+		assertEquals 2, bisect.maxSteps(1, 4)
+		assertEquals 3, bisect.maxSteps(1, 7)
+		assertEquals 4, bisect.maxSteps(1, 10)
+	}
+}
+</code></pre>
+
+下面是计算代码：
+
+<pre><code>
+class BisectStepsCounter {
+	def maxSteps(int good, int bad, int stepsSoFar = 0) {
+		if (bad - good <= 1) return stepsSoFar;
+
+		stepsSoFar += 1
+		int middle = (bad + good)/2
+		Math.max(maxSteps(good, middle, stepsSoFar), maxSteps(middle, bad, stepsSoFar))
+	}
+}
+</code></pre>
+
+应用这段逻辑，我算了一下自己的实际需要：bisectCounter.maxSteps(167932, 168223)，结果是9。唉，看来我还得再找点什么事情继续打发时间……
