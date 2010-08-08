@@ -4,7 +4,7 @@ title: Bisect Max Steps Counter
 categories: groovy code
 ---
 
-星期五下午，我需要通过bisect的方法来定位系统中的一个bug。一次次地更新、编译和测试很无聊，所以我决定用新学的Groovy计算bisect所需的最大次数来打发时间。
+星期五下午，我需要通过bisect的方法来定位系统中的一个bug。一次次地更新、编译和测试很耗时也很无聊，所以我决定用新学的Groovy计算bisect所需的最大次数来打发等待时间。
 
 以下是测试：
 <pre><code>
@@ -20,7 +20,7 @@ class BisectTest extends GroovyTestCase {
 }
 </code></pre>
 
-下面是计算代码：
+下面是实现代码：
 
 <pre><code>
 class BisectStepsCounter {
