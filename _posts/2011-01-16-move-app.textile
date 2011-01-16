@@ -1,0 +1,11 @@
+---
+layout: post
+title: 很贴心的提示
+categories: mac
+---
+
+在把Mac OS X升级到10.6.6版本以后，当我从Download目录下直接启动程序时，系统给出了下面这个很贴心的新提示：
+
+!/images/littleSnapper.png!
+
+如此体贴，我想不遵守最佳实践都难。
