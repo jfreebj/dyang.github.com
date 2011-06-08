@@ -4,7 +4,7 @@ title: 版本控制
 full_posts: 5
 ---
 
-<a href='http://feeds2.feedburner.com/dyang' class='float-right'><img src='/images/subscribe.png' alt='Subscribe to XML Feed'/></a>
+<a href='http://feeds2.feedburner.com/dyang' class='float-right'><img src='/images/feed-icon.png' alt='Subscribe to XML Feed'/></a>
 
 {% for post in site.categories.scm %}
   {% if forloop.index < page.full_posts %}
