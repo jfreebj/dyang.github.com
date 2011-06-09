@@ -4,7 +4,7 @@ title: 懂了再去定制
 categories: agile
 ---
 
-<div style="float:right"><iframe src="http://rcm.amazon.com/e/cm?lt1=_blank&bc1=FFFFFF&IS2=1&npa=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=hubpage0df67b-20&o=1&p=8&l=as1&m=amazon&f=ifr&ref=tf_til&asins=0130676349" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe></div>
+<div style="float:right"><iframe src="http://rcm.amazon.com/e/cm?lt1=_blank&bc1=FFFFFF&IS2=1&npa=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=lostinmalmo-20&o=1&p=8&l=as1&m=amazon&f=ifr&ref=tf_til&asins=0130676349" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe></div>
 在实施一种新的管理方法（比如scrum）的时候，我们常听到这样一种声音：
 
 _我们项目的情况比较特殊，没必要严格遵照要求，我们需要定制……_

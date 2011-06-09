@@ -5,10 +5,10 @@ categories: ci agile
 ---
 
 <div>
-<div style="float:right"><iframe src="http://rcm.amazon.com/e/cm?lt1=_blank&bc1=FFFFFF&IS2=1&npa=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=hubpage0df67b-20&o=1&p=8&l=as1&m=amazon&f=ifr&ref=qf_sp_asin_til&asins=0321601912" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe></div>
+<div style="float:right"><iframe src="http://rcm.amazon.com/e/cm?lt1=_blank&bc1=FFFFFF&IS2=1&npa=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=lostinmalmo-20&o=1&p=8&l=as1&m=amazon&f=ifr&ref=qf_sp_asin_til&asins=0321601912" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe></div>
 <div><i><strong>2011-6-8更新</strong>：我在Cruise项目上的同事及产品经理Jez Humble对Cruise团队在持续集成、持续发布方面的多年经验做了精妙的总结，著成了Continuous Delivery一书。大家如果想真正了解持续集成是如何在真实项目中成功应用的，那么请一定不要错过这本书！（这本书也可以在Kindle上阅读）</i>
 
-<iframe src="https://ws.amazon.com/widgets/q?_encoding=UTF8&tag=hubpage0df67b-20&asin=B003YMNVC0&size=small&ServiceVersion=20061125&TemplateId=8012" style="width:157px;height:19px;" frameborder="0" scrolling="no"></iframe></div>
+<iframe src="https://ws.amazon.com/widgets/q?_encoding=UTF8&tag=lostinmalmo-20&asin=B003YMNVC0&size=small&ServiceVersion=20061125&TemplateId=8012" style="width:157px;height:19px;" frameborder="0" scrolling="no"></iframe></div>
 </div>
 
 
@@ -46,7 +46,7 @@ categories: ci agile
 
 说到这里，我们遇到了阻碍持续集成实施的一个难点。我不想在这里写很多关于如何编写自动化测试的内容，因为在我和很多同行的交流中，我感觉阻碍推行自动化测试（或者任何其它持续集成实践）的难点更多是在文化和交流上，而不是在技术上。我只是想介绍一下Cruise团队是怎样面对这个问题的，希望能给大家提供某种参考。
 
-Cruise有着一个10人左右的团队，在这个团队里只有一名全职的QA，这个比例可能比绝大多数的团队都要低，但是从去年7月至今，我们已经高质量地发布了1.0、1.1和1.2三个版本，而且发布的过程都非常顺利。这在很大程度上归功于我们所写的大量测试。在Cruise的代码库里，我们有着单元测试、集成测试、系统测试和性能测试。我们采取了一系列的措施来保证这些测试会一直为我们提供最大的价值：<div style="float:right"><iframe src="http://rcm.amazon.com/e/cm?lt1=_blank&bc1=FFFFFF&IS2=1&npa=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=hubpage0df67b-20&o=1&p=8&l=as1&m=amazon&f=ifr&ref=qf_sp_asin_til&asins=0321601912" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe></div>
+Cruise有着一个10人左右的团队，在这个团队里只有一名全职的QA，这个比例可能比绝大多数的团队都要低，但是从去年7月至今，我们已经高质量地发布了1.0、1.1和1.2三个版本，而且发布的过程都非常顺利。这在很大程度上归功于我们所写的大量测试。在Cruise的代码库里，我们有着单元测试、集成测试、系统测试和性能测试。我们采取了一系列的措施来保证这些测试会一直为我们提供最大的价值：<div style="float:right"><iframe src="http://rcm.amazon.com/e/cm?lt1=_blank&bc1=FFFFFF&IS2=1&npa=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=lostinmalmo-20&o=1&p=8&l=as1&m=amazon&f=ifr&ref=qf_sp_asin_til&asins=0321601912" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe></div>
 
 * 我们采取TDD的开发模式，所以单元、集成测试往往会先于产品代码而出现
 * 每一个新功能的开发都必须包含完整的自动化系统测试。在我们的项目 "管理工具":http://www.thoughtworks.com/mingle 中，任何一个新功能在可以交付给QA做人工测试之前，必须要经过自动化的系统测试。开发自动系统测试的时间有时候甚至会超过开发相应的产品代码的时间
