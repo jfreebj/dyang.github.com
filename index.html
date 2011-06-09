@@ -2,16 +2,25 @@
 layout: master
 title: Happy Hacking
 description: Derek Yang的个人博客，关注于敏捷软件开发、持续集成以及版本管理
+full_posts: 3
 ---
 
 <div class='home_box' id='home_left'>
-  <h2><a href='http://feeds2.feedburner.com/dyang' class='float-right'><img src='/images/feed-icon.png' alt='Subscribe'/></a> Latest Blog Post <span class="more">(<a href='/blog.html'>More</a>)</span></h2>
-  
+  <h2><a href='http://feeds2.feedburner.com/dyang' class='float-right'><img src='/images/feed-icon.png' alt='Subscribe'/></a> Latest Blog Posts <span class="more">(<a href='/blog.html'>More</a>)</span></h2>
+    
+{% for post in site.posts %}
+  {% if forloop.index <= page.full_posts %}
   <div class='post'>
-    <h1><a href='{{site.posts.first.url}}'>{{site.posts.first.title}}</a></h1>
-    <div class='body'>{{ site.posts.first.content }}</div>
-    <a href='{{site.posts.first.url}}#disqus_thread'>Comments</a>
+    <span class='date'>{{post.date | date_to_string}}</span>
+    <h1><a href='{{post.url}}'>{{post.title}}</a></h1>
+    <div class='body'>{{post.content}}</div>
+    <a href='{{post.url}}#disqus_thread'>View Comments</a>
   </div>
+  {% endif %}
+{% endfor %}
+</table>
+
+<h2><span class="more"><a href='/blog.html'>More</a></span></h2>
 </div>
 <div class='home_box' id='home_right'>
   <h2>Categories</h2>
