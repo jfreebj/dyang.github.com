@@ -3,6 +3,21 @@ title: About
 layout: master
 ---
 
+h2. About Derek Yang
+
+<img style="float:right; margin:5 0 0 0;" src="http://www.gravatar.com/avatar/0ca4e6fdd18fd7b177eb73f1a690d525.png" />
+My name is Derek Yang, although my friends around the Internet tend to call me dyang.  I live in Helsingborg, Sweden with my lovely wife.  Before that, I lived in China, Shanghai for 7 years and Beijing for 6 years.  
+
+In November 2009, I joined "Autodesk":http://www.autodesk.com as a lead engineer.  We worked on a product called "Vault":http://en.wikipedia.org/wiki/Autodesk_Vault, which allowed design teams to better manage their design data.  Vault was primarily built on top of the Microsoft stack (Windows/.NET/Sql Server, etc).
+
+Previously, I worked as a senior consultant for "ThoughtWorks":http://www.thoughtworks.com, which is (in my own opinion) the best agile consultancy in the world.  One of my favorite product that my team delivered was a continuous delivery product called "Go":http://www.thoughtworks-studios.com/go-agile-release-management (formerly known as Cruise).  I had a great time there developing, dogfooding, delivering and maintaining Go with Go (yes, we dogfooded our own product seriously).  Go was primarily built on top of the JVM stack on Mac OS X and Ubuntu.  
+
+h2. Contact
+
+You are welcome to contact me at <a href="mailto:derekhyang@gmail.com">derekhyang@gmail.com</a>.  You can also find me on twitter as @derekhyang. 
+
+---
+
 h2. About This Site
 
 This site is built using the "Jekyll":http://github.com/mojombo/jekyll library and hosted on "GitHub":http://github.com/. The source code used to create this library is "publicly available on GitHub":http://github.com/dyang/dyang.github.com as well.
