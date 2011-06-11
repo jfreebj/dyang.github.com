@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: ff-meta-serif-web-pro-1, ff-meta-serif-web-pro-2, Georgia, sans-serif;
   background: #A4CFBE;
   color: #6C6E58;
 }
@@ -13,6 +13,7 @@ img.right {
 
 a {
   color: #3E423A;
+  text-decoration: none;
   font-weight: bold;
 }
 
@@ -22,7 +23,7 @@ a:visited {
 }
 
 #wrapper {
-  width: 50em;
+  width: 60em;
   margin: 2em auto 0;
   padding: 0;
   background: #fff;
@@ -41,16 +42,18 @@ a:visited {
   -webkit-border-top-right-radius: 1em;  
   border-top-left-radius: 1em;  
   border-top-right-radius: 1em;  
-  padding: 1.5em;
+  padding: 1em;
   text-align: center;
 }
 
 #header h1 {
-  font-size: 4em;
+  font-size: 3em;
+  font-weight: normal;
+  text-shadow: #3E423A 2px -1px 2px;
   display: inline;
   letter-spacing: -0.08em;
   color: #fff;
-  font-weight: normal;
+  
 }
 
 #header h2 {
@@ -63,6 +66,7 @@ a:visited {
 
 #menu {
   background: #3E423A;
+  padding:0.2em;
 }
 
 #menu ul {
@@ -76,21 +80,22 @@ a:visited {
 }
 
 #menu ul li a {
-  color: white;
-  font-size: 1.3em;
-  padding: 0 0.5em;
-  line-height: 2.5em;  
+  color: #FFF5CC;
+  font-size: 0.9em;
+  padding: 1em 1em;
+  line-height: 2em;  
   font-weight: normal;
 }
 
 #content {
-  padding: 2em;
+  padding: 1em 2em;
 }
 
 #content h2 {
   margin: 0 0 0.5em 0;
   color: black;
-  font-size: 1.5em;
+  font-size: 1em;
+  font-style: italic;
 }
 
 #content p {
@@ -98,18 +103,18 @@ a:visited {
   letter-spacing: -0.03em;
 }
 
-span.date {
-  background: #484;
-  display: block;
-  padding: 0.4em 0.6em 0.3em;
-  font-weight: bold;
-  color: white;
-  border-bottom: 3px solid #262;
-  float: left;
+div.date {
+  padding: 0.2em 0.4em 0.2em;
+  display: inline;
+  color: gray;
+  font-size: 40%;
+  font-style: italic;
 }
 
 div.post {
   margin-bottom: 2em;
+  border-bottom: 1px solid #262;
+  font-size: 90%;
 }
 
 .post h1 {
@@ -121,12 +126,13 @@ div.post {
 .post h1 a {
   text-decoration: none;
   clear: left;
-  display: block;
+  display: inline;
   color: black;
   padding: 0.3em 0;
   margin: 0 0 0.2em 0;
   border-bottom: 1px dashed #dba;
   font-weight: bold;
+  font-size: 0.7em;
 }
 
 .post br { margin-bottom: 10px;}
@@ -184,25 +190,22 @@ div.related {
 }
 
 #content .home_box h2 {
-  background: #417378;
-  padding: 0.3em 0.5em;
-  border-bottom: 3px solid #255;
-  margin-bottom: 0em;
-  color: white;
+  padding: 0;
+  border-bottom: 1px solid #255;
+  margin-bottom: 0 0 1em 0;
 }
 
 .home_box h2 a {
-  color: white;
   margin: 0 0.2em;
 }
 
 #home_left {
-  width: 29em;
+  width: 38em;
 }
 
 #home_right {
   width: 16em;
-  margin-left: 1em;
+  margin-left: 2em;
 }
 
 .clearfix { clear: both;}
@@ -212,13 +215,9 @@ div.related {
   font-weight: normal;
 }
 
-.home_box .post h1 a {
-  font-size: 0.7em;
-}
-
 .repo {
   background: #fff5cc;
-  border: 2px solid #dda;
+  border: 1px solid #dda;
   padding: 0.7em 1em;
   font-size: 0.8em;
   letter-spacing: -0.03em;
@@ -228,13 +227,13 @@ div.related {
   border-radius: 0.5em;
 }
 .repo h3 {
-  margin: 0 0 0.3em 0;
+  margin: 0 0 0.3em 0.3em;
 }
 .repo h3 a {
-  font-weight: bold;
-  color: black;
+  font-weight: normal;
+  color: #3E423A;
   letter-spacing: 0;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 #github-projects.big .repo {
