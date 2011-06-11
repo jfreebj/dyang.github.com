@@ -34,3 +34,7 @@ def parse(String ocunitOutput) {
 同样的逻辑如果在Java里处理就比较麻烦了。由于Java中switch只支持byte、short、char、int(以及它们的包装类）和枚举类型，因此要么写一堆if-else，要么就得动用strategy等面向对象手段来掩盖语言层面的不足了，写起来总感觉不如Groovy那样顺畅自然。
 
 值得一提的是，上面代码中的Matcher.getLastMatcher方法来自GDK的扩展，用来提供上一次正则表达式匹配的结果（比如获取其中的组信息），这个方法格外适用于switch-case这种无法直接获取正则匹配结果的场景。
+
+<br><br><br><br>
+
+
