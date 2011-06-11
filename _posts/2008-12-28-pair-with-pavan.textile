@@ -11,9 +11,9 @@ h2. 集体重构
 
 我们的修改是以前一段时间项目里大伙凑在一起做的一些修改为基础而进行的。在Cruise项目上，我们有一个不成文的习惯，就是隔一段时间大伙就凑在会议室里，拿一台笔记本连上投影仪，找出一段写的不好的代码做集体重构。每次开始的时候会有人负责提出一个问题，例如一段写的很糟糕的代码，或者一个看上去很牵强的设计，然后大家一起集思广议想解决办法，并由一个人拿着电脑对着投影仪直接修改。在这个过程中有时候写代码的人思路会中断，这时就会有人抢过电脑来继续写。这种方法的效果非常不错，特别是当大伙不断对一个问题追问“为什么”的时候，往往会让我们原本非常狭窄的思路一下子拓宽起来。
 
+<div style="float:left"><iframe src="http://rcm.amazon.com/e/cm?t=lostinmalmo-20&o=1&p=8&l=as1&asins=0596800673&ref=tf_til&fc1=000000&IS2=1&lt1=_blank&m=amazon&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&npa=1&f=ifr" style="width:120px;height:200px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe></div>
 h2. 分布式版本控制
-<div style="float:right"><iframe src="http://rcm.amazon.com/e/cm?t=lostinmalmo-20&o=1&p=8&l=as1&asins=0596800673&ref=tf_til&fc1=000000&IS2=1&lt1=_blank&m=amazon&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&npa=1&f=ifr" style="width:120px;height:200px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
-</div>
+
 Cruise选择Mercurial做为版本控制系统。大家在集体写了svn external的初始代码之后，在一台笔记本上留下了一个patch。我和Pavan要做的第一件事就是把这个patch迁移到我们工作所用的pair station上来。方法非常简单：首先把那个patch通过scp拿到本地来，然后运行hg qimport指定patch文件的存储路径就可以了。当然，还可以用hg pull把那台笔记本上的修改都pull过来，或者利用hg transplant把那个指定的版本pull过来。这几种方法都可以达到我们的目的。前一种操作多一些，但会把拿过来的patch加入到本地的 queue中，是我个人最习惯的用法；第二种操作很简单，但是有可能pull过来的修改过多；第三种操作简便，效率理想，只是并不会把拿来的patch加入到queue里，我们平时会穿插着使用。
 
 h2. 工欲善其事，必先利其器

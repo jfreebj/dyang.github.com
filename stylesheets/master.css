@@ -249,3 +249,13 @@ div.related {
 .float-right { float: right; }
 
 a img { border: 0; }
+
+.sns {
+  display: inline-block;
+  width: 200px;
+}
+
+.widget {
+  float: left;
+  margin: 4px 30px 4px 4px;	
+}
