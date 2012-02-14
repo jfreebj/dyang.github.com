@@ -6,7 +6,7 @@ categories:
 ---
 
 !http://f.cl.ly/items/35410I1r0v3N062l1q0j/AppIcon.png! 
-我和朋友合作开发的iPhone软件 "{color:blue}Veggie in China":http://veggieinchina.com 今天正式发布了！ :D
+我和朋友合作开发的iPhone软件 "{color:darkblue}Veggie in China":http://veggieinchina.com 今天正式发布了！ :D
 
 这个软件的创意来自于我在ThoughtWorks工和时和一些素食外国同事外出就餐的经历。由于那些素食外国同事不会中文，所以我和几个中国同事就常常需要帮他们做翻译。他们的饮食习惯与中国传统的饮食习惯之间的巨大差异（以及由此带来的困惑和不便）给我留下了深刻的印象。
 
@@ -16,7 +16,7 @@ categories:
 
 由此我开始想，如果我能帮每位去中国访问的外国素食者也都写一本常用语手册，那一定会派上些用场。
 
-由此便产生了 "{color:blue}Veggie in China":http://veggieinchina.com :P
+由此便产生了 "{color:darkblue}Veggie in China":http://veggieinchina.com :P
 
 我希望它能帮助到那些在中国的外国素食者，我希望他们不再因为自己的很有意义但却鲜有人理解的饮食习惯而感到困惑。
 
