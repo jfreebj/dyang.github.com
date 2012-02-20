@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 做软件与做人 
+title: 软件与性格 
 categories:
   - others
 ---
