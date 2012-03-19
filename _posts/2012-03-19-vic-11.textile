@@ -1,0 +1,22 @@
+---
+layout: post
+title: Veggie in China 1.1发布 
+categories:
+  - others
+---
+
+我的iPhone应用 "Veggie in China":http://www.veggieinchina.com 的1.1版本今天 "正式发布":http://itunes.apple.com/us/app/veggie-in-china/id473915713?ls=1&mt=8 ！
+
+与1.0版本相比，1.1版本的改动较少，主要集中在：
+
+* 增加了天津、南京和苏州三个城市的素食餐馆数据
+* 增加了糖、味精中英文词汇的支持
+* 改进了一些界面设计
+
+我的朋友 "林胜":http://mac.linsheng.me 和 "田乐":http://www.diamondtin.com 对这个版本的开发和设计提供了很多帮助，在此一并致谢！
+
+下一个版本将会在功能上做出重大改动，敬请期待。
+
+P.S. 
+1. 如果您纳闷为什么会有人不吃香香的味精，那么请读 "这篇文章":http://www.ezhealthydiet.com/msg-side-effects.html 。
+2. 如果您纳闷为什么会有人开发像Veggie in China这样“偏门”的应用，那么请读 "这篇文章":http://www.veggieinchina.com/story 。
